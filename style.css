@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+} /* This code ensures that the width and height of all elements include padding and borders, preventing them from growing bigger than the set size. */
+
+body{
+    background-color: #48A30012;
+    ;
+}
+
+main {
+    padding: 0 16px 32px;
+}
+.heading {
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+}
+
+.heading span{
+    color: #61481C;
+    
+}
+
+.app-container{
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin-inline: auto; /*for putting it in center*/
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+
+}
+.Sun-icon{
+    vertical-align: middle;
+    margin-left: 16px; /*title aur sun ke beech ka space*/
+}
+
+.progress-label{
+   
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color: #858585;
+}
+
+.progress-bar{
+    height: 31px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 15px;
+}
+
+.showerror .error{
+    display: block;
+
+}
+
+.progress-value{
+    height: 100%;
+    width: 60%;
+    background-color:#48A300;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 10px;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+
+}
+
+.progress-value span {
+    padding-left: 20px;
+}
+
+.error{
+    font-size: 14px;
+    color:#FF5151;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    display: none;
+
+}
+
+.goal {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #FFFFFF;
+    margin-bottom: 46px;
+    margin-top: 46px;
+}
+
+.custom-checkbox{
+    width: 24px;
+height: 24px;
+border: 2px solid rgba(97, 72, 28, 0.3) ;
+border-radius: 50%;
+flex-shrink: 0;
+cursor: pointer;
+display: flex;/* is a CSS property that makes an element a flexible container, allowing its child elements to be arranged in a row or column, and making it easier to align, position, and distribute space between them. */
+align-items: center;
+justify-content: center;/* is a CSS property used with flexbox that centers the child elements horizontally within their container. All the child elements will be aligned in the middle of the container from left to right. */
+}
+
+.checkicon {
+    display: none;
+}
+
+.goal-input{
+    border: none;
+    margin-left: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    align-self: stretch;
+    padding-left: 22px;
+    outline: none;
+    font-weight: 500;
+}
+
+.goal-input::placeholder{
+    color: #D9D9D9;
+
+} 
+
+.bottom {
+    font-size: 16px;
+    color:#000000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.end {
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 96px;
+}
+
+.completed .custom-checkbox{    
+    background: #48A300;
+    border-color: #48A300;
+
+}    /* yeh bata raha ki agar kisi ke parent ke upar completed hai toh uspe yeh yeh task perform karo */
+
+.completed .checkicon {
+    display: block;
+}
+
+.completed .goal-input {
+    color: #48A300;
+    text-decoration-line: line-through;
+
+}
+
+@media (max-width: 768px){ /*mobile ke hisab se sizing karne ke liye*/
+    .heading{
+        font-size: 32px;
+    }
+    
+    .app-container{
+        padding: 16px 32px;
+    }
+
+    .goal{
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 14px;
+    }
+
+    .custom-checkbox{
+        width: 20px;
+        height: 20px;
+    }
+} 
+

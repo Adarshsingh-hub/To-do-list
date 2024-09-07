@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus on Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!--for linking the css page with html-->
+     <!--The defer attribute in the <script> tag is like telling the browser: "Hey, download this JavaScript file now, but don't run it until the whole HTML page is fully loaded."-->
+</head>
+<body>
+    <main>
+        <h1 class="heading">Focus on <span>Today</span></h1>
+        <div class="app-container">
+            <h2 class="subtitle">Today <img class = "Sun-icon" src="/Sun.png" alt="Sun"></h2>
+            <p class="progress-label">Raise the bar by completing your goals!</p>
+            <div class="progress-bar">
+                <div class="progress-value"><span>2/3 Completed</span>
+                </div><p class="error">Please set all the 3 goals!</p>
+            </div>
+            <div class="goal">
+                <div class="custom-checkbox"><img class = "checkicon" src="/Group 1.png" alt="checkicon"></div>
+                <input id="first" class = "goal-input" type="text" placeholder="Add new goal... ">
+            </div>
+            <div class="goal">
+                <div class="custom-checkbox"><img class = "checkicon" src="/Group 1.png" alt="checkicon"></div>
+                <input id = "second" class = "goal-input" type="text" placeholder="Add new goal... ">
+            </div>
+            <div class="goal">
+                <div class="custom-checkbox"><img class = "checkicon" src="/Group 1.png" alt="checkicon"></div>
+                <input id = "third" class = "goal-input" type="text" placeholder="Add new goal... ">
+            </div>
+            <p class="bottom">“Move one step ahead, today!”</p>
+            <p class = "end">First JavaScript project</p>
+            
+        </div> <!--The <div> tag in HTML is like an empty box that you can use to group other content together.-->
+    </main> <!--The <main> tag in HTML is used to represent the dominant content of the <body> of a document.-->
+</body>
+<script src="script.js" defer></script>
+</html>
